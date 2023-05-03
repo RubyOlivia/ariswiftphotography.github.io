@@ -1,0 +1,60 @@
+/* Home */
+#home {
+  background: linear-gradient(
+    90deg,
+    rgba(236, 16, 16, 0.726),
+    rgba(129, 25, 215, 0.582)
+  );
+  min-height: 500px;
+}
+
+/* About */
+
+
+/* Services */
+#services {
+  background: linear-gradient(
+    90deg,
+    rgba(236, 16, 16, 0.726),
+    rgba(129, 25, 215, 0.582)
+  );
+  min-height: 500px;
+}
+
+/* Contact */
+#contact {
+  background: linear-gradient(
+    90deg,
+    rgba(236, 16, 16, 0.726),
+    rgba(129, 25, 215, 0.582)
+  );
+  min-height: 500px;
+}
+
+.card {
+  transition: all 0.5s ease;
+}
+
+.card:hover {
+  cursor: pointer;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.726);
+}
+
+/* Form */
+.form{
+  background: linear-gradient(
+    90deg,
+    rgba(236, 16, 16, 0.726),
+    rgba(129, 25, 215, 0.582)
+  );
+
+}
+  
+
+/* Footer */
+.footer {
+  min-height: auto;
+  color: black;
+  text-align: center;
+  padding-top: 30px;
+}
