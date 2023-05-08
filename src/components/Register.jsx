@@ -15,7 +15,7 @@ const Register = () => {
             </p>
             <h5 className="mb-4 text-white">Already signed up?</h5>
             <NavLink
-              to="/register"
+              to="/login"
               className="btn btn-outline-light 
                         ounded-pull mb-2 w-50"
             >
