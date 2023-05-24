@@ -1,7 +1,48 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
+import { useState } from "react";
+
 
 const Register = () => {
+  
+  const [user, setUser] = useState({
+    username: "",
+    email: "",
+    password: "",
+  });
+
+  const handleInput = (event) => {
+    let name = event.target.name;
+    let value = event.target.value;
+
+    setUser({ ...user, [name]: value });
+  }
+
+  const handleSubmit = async (event) => {
+    event.preventDefault();
+    // object destructuring
+    const { username, email, password } = user;
+    try {
+      const res = await fetch("/register", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          username, email, password
+        }),
+      });
+        if(res.status === 400 || !res){
+            window.alert("User already exists")
+        } else {
+            window.alert("Registration Successful")
+            window.history.pushState("/login")
+        }
+    } catch (error) {
+      console.log(error);
+    }
+  };
+
   return (
     <div>
       <div className="container shadow my-5">
@@ -17,14 +58,31 @@ const Register = () => {
             <NavLink
               to="/login"
               className="btn btn-outline-light 
-                        ounded-pull mb-2 w-50"
+                        rounded-pull mb-2 w-50"
             >
               Login
             </NavLink>
           </div>
           <div className="col-md-6 p-5">
             <h1 className="display-6 fw-bolder p-5">Register</h1>
-            <form>
+            <form onSubmit={handleSubmit} method="POST">
+            <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">
+                  Username
+                </label>
+                <input
+                  type="username"
+                  class="form-control"
+                  id="exampleInputUsername"
+                  aria-describedby="usernameHelp"
+                  name="username"
+                  value={user.username}
+                  onChange={handleInput}
+                />
+                <div id="emailHelp" class="form-text">
+                  Choose a username
+                </div>
+              </div>
               <div class="mb-3">
                 <label for="exampleInputEmail1" class="form-label">
                   Email address
@@ -34,6 +92,9 @@ const Register = () => {
                   class="form-control"
                   id="exampleInputEmail1"
                   aria-describedby="emailHelp"
+                  name="email"
+                  value={user.email}
+                  onChange={handleInput}
                 />
                 <div id="emailHelp" class="form-text">
                   Your e-mail here
@@ -46,8 +107,14 @@ const Register = () => {
                 <input
                   type="password"
                   class="form-control"
-                  id="exampleInputPassword1"
+                  id="exampleInputPassword"
+                  name="password"
+                  value={user.password}
+                  onChange={handleInput}
                 />
+                 <div id="emailHelp" class="form-text">
+                  Choose a password
+                </div>
               </div>
               <div class="mb-3 form-check">
                 <input

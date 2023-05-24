@@ -1,6 +1,24 @@
 import React from "react";
+import { useState } from "react";
 
 const Contact = () => {
+    const [senderName, setSenderName] = useState("");
+    const [senderEmail, setSenderEmail] = useState("");
+    const [senderMessage, setSenderMessage] = useState("");
+
+    const handleName = (e) => {
+        setSenderName(e.target.value)
+
+    }
+
+    const handleEmail = (e) => {
+        setSenderEmail(e.target.value)
+    }
+
+    const handleMessage = (e) => {
+        setSenderMessage(e.target.value)
+    }
+
   return (
     <div>
       <section id="contact">
@@ -29,6 +47,8 @@ const Contact = () => {
                   class="form-control"
                   id="exampleFormControlInput1"
                   placeholder="John Doe"
+                  value={senderName}
+                  onChange={handleName}
                 />
               </div>
               <div class="mb-3">
@@ -40,6 +60,8 @@ const Contact = () => {
                   class="form-control"
                   id="exampleFormControlInput1"
                   placeholder="name@example.com"
+                  value={senderEmail}
+                  onChange={handleEmail}
                 />
               </div>
               <div class="mb-3">
@@ -51,6 +73,8 @@ const Contact = () => {
                   id="exampleFormControlTextarea1"
                   rows="4"
                   placeholder="Your message here..."
+                  value={senderMessage}
+                  onChange={handleMessage}
                 ></textarea>
               </div>
               <button type="submit" class="btn btn-light me-4 rounded pill px-4 py-2">

@@ -7,37 +7,10 @@ const Footer = () => {
       <div className="container">
         <footer className="py-5">
           <div className="row">
-            <div className="col-3 offset-1">
+            <div className="col-4 offset-1">
               <h4>Nature and wildlife photography</h4>
             </div>
-
-            <div className="col-2 offset-1">
-              <h5>Navigation</h5>
-              <ul className="nav flex-column">
-                <li className="nav-item mb-2">
-                  <a to="#" className="nav-link p-0 text-white">
-                    Home
-                  </a>
-                </li>
-                <li className="nav-item mb-2">
-                  <a to="#" className="nav-link p-0 text-white">
-                    About
-                  </a>
-                </li>
-                <li className="nav-item mb-2">
-                  <a to="#" className="nav-link p-0 text-white">
-                    Gallery
-                  </a>
-                </li>
-                <li className="nav-item mb-2">
-                  <a to="#" className="nav-link p-0 text-white">
-                    Contact
-                  </a>
-                </li>
-              </ul>
-            </div>
-
-            <div className="col-4 offset-1">
+            <div className="col-6 offset-1">
               <form>
                 <h5>Subscribe to my newsletter!</h5>
                 <p>I'll keep you in the loop</p>

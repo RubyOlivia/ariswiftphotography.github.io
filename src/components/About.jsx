@@ -7,7 +7,6 @@ const About = () => {
     <div>
       <section id="about">
         <div className="container my-5 py-5">
-        <img src={camerapic} alt="image not loading :{" width="400" height="auto"/>
           <div className="row justify-content-end">
             <div className="col-sm-6">
               <h3 className="fs-5 text-center">About me</h3>
