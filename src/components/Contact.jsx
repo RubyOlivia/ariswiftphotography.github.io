@@ -1,5 +1,6 @@
 import React from "react";
 import { useState } from "react";
+import { NavLink } from "react-router-dom";
 
 const Contact = () => {
     const [senderName, setSenderName] = useState("");
@@ -24,20 +25,23 @@ const Contact = () => {
       <section id="contact">
         <div className="container my-5 py-5">
           <div className="row justify-content-center">
-            <div className="col-xs-6 text-center">
-              <h3 className="fs-5 text-center text-white">Contact</h3>
-              <p className="lead text-center text-white">
+            <div className="col-xl-6 text-center">
+              <h3 className="fs-10 text-center text-white">Contact</h3>
+              <p className="fs-10 lead text-center text-white">
                 Let's connect and create something amazing together!
               </p>
-              <a href="#" class="link-light">
+              {/* <a href="#" class="link-light">
                 Email
-              </a>
+              </a> */}
+              <p className="text-bold text-white">
+                emailemail@email.com
+              </p>
             </div>
           </div>
         </div>
-        <div className="row pb-3 justify-content-center ">
+         <div className="row pb-3 justify-content-center ">
           <div className="col-md-8 text-center text-white">
-            <form action="">
+            {/* <form action="">
               <div class="mb-3">
                 <label for="name" class="form-label">
                   Your Name
@@ -81,7 +85,19 @@ const Contact = () => {
                 {" "}
                 Send Message <i className="fa fa-paper-plane"></i>
               </button>
-            </form>
+            </form> */}
+              <div className="text-center mt-5">
+                
+              <NavLink to="/about" className="btn btn-light me-4 rounded pill px-4 py-2">
+                    Get to know me!
+                  </NavLink>
+                
+                <NavLink to="/gallery" className="btn btn-light me-4 rounded pill px-4 py-2">
+                    Check out my gallery!
+                  </NavLink>
+                  
+                  
+                </div>
           </div>
         </div>
       </section>

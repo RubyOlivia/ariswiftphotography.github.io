@@ -1,4 +1,6 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
+import toasterpic from "../assets/images/Toaster1.jpg";
 
 const Gallery = () => {
   return (
@@ -13,10 +15,72 @@ const Gallery = () => {
               </p>
             </div>
           </div>
-        </div>
-
-        <div className="container">
-
+          <div className="">
+            <img
+              src={toasterpic}
+              alt="image not loading :{"
+              width="400"
+              height="auto"
+            />
+            <img
+              src={toasterpic}
+              alt="image not loading :{"
+              width="400"
+              height="auto"
+            />
+            <img
+              src={toasterpic}
+              alt="image not loading :{"
+              width="400"
+              height="auto"
+            />
+            <img
+              src={toasterpic}
+              alt="image not loading :{"
+              width="400"
+              height="auto"
+            />
+            <img
+              src={toasterpic}
+              alt="image not loading :{"
+              width="400"
+              height="auto"
+            />
+            <img
+              src={toasterpic}
+              alt="image not loading :{"
+              width="400"
+              height="auto"
+            />
+            <img
+              src={toasterpic}
+              alt="image not loading :{"
+              width="400"
+              height="auto"
+            />
+            <img
+              src={toasterpic}
+              alt="image not loading :{"
+              width="400"
+              height="auto"
+            />
+            <img
+              src={toasterpic}
+              alt="image not loading :{"
+              width="400"
+              height="auto"
+            />
+          <div className="text-center mt-5">
+                
+                <NavLink to="/about" className="btn btn-light me-4 rounded pill px-4 py-2">
+                    Get to know me!
+                  </NavLink>
+                  <NavLink to="/contact" className="btn btn-light me-4 rounded pill px-4 py-2">
+                    Get in touch!
+                  </NavLink>
+                  
+                </div>
+          </div>
         </div>
       </section>
     </div>

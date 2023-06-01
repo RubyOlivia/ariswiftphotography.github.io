@@ -33,7 +33,7 @@ const Footer = () => {
           </div>
 
           <div className="d-flex justify-content-center py-4 my-4 border-top">
-            <p>© 2023 ari swift Photography</p>
+            <p>© 2023 ilumade swift Photography</p>
             <ul className="list-unstyled d-flex">
               <li className="ms-3">
                 <a className="link-light" to="#">

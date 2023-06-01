@@ -1,34 +1,24 @@
 /* Home */
 #home {
-  background: linear-gradient(
-    90deg,
-    rgba(236, 16, 16, 0.726),
-    rgba(129, 25, 215, 0.582)
-  );
+  background-image: url(C:\Users\zachc\Desktop\Web Development\AriWebsite\my-app\src\assets\images\Flower or leaf.jpg);
+  background-size: cover;
+  background-position: center;
   min-height: 500px;
 }
+
 
 /* About */
 
 
-/* Services */
-#services {
-  background: linear-gradient(
-    90deg,
-    rgba(236, 16, 16, 0.726),
-    rgba(129, 25, 215, 0.582)
-  );
-  min-height: 500px;
-}
+
 
 /* Contact */
 #contact {
-  background: linear-gradient(
-    90deg,
-    rgba(236, 16, 16, 0.726),
-    rgba(129, 25, 215, 0.582)
-  );
+  background-image: url(C:\Users\zachc\Desktop\Web Development\AriWebsite\my-app\src\assets\images\Bird placeholder.jpg);
+  background-size: cover;
+  background-position: top center;
   min-height: 500px;
+  opacity: 0.9;
 }
 
 .card {

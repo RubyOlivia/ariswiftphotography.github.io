@@ -10,8 +10,8 @@ const Home = () => {
     <div>
       <section id="home">
         <div className="container">
-          <div className="row justify-content-center">
-            <div className="col-md-4 mt-5">
+          {/* <div className="row justify-content-center">
+            <div className="col-md-4 mt-5 d-inline p-2 bg-black text-white">
               <h1 className="display-8 fw-bolder mb-4 text-center text-white">
                 Nature's canvas, our vision
               </h1>
@@ -27,7 +27,7 @@ const Home = () => {
                 </NavLink>
               </div>
             </div>
-          </div>
+          </div> */}
         </div>
       </section>
       <About />
